@@ -14,14 +14,11 @@ enum RequestType: String {
 }
 
 class APIRequest: EndPoints {
+  
   var baseURL: NSURL?
-  
   var route: Route
-  
   var body: [String : Any]?
-  
   var headers: [String : String]?
-  
   var queryParam: [String : String]?
   
   var method: RequestType

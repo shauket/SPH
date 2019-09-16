@@ -14,7 +14,7 @@ enum Route: CustomStringConvertible {
   var description: String {
     switch self {
     case .search:
-      return "action/datastore_search"
+      return "datastore_search"
     }
   }
 }

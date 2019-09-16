@@ -10,7 +10,7 @@ import Foundation
 
 protocol URLSessionProtocol {
   typealias DataTaskResult = (Data?, URLResponse?, Error?) -> Void
-  func dataTask(with request: NSURLRequest, completionHandler: @escaping DataTaskResult) -> URLSessionDataTaskProtocol
+  func dataTask(with request: URLRequest, completionHandler: @escaping DataTaskResult) -> URLSessionDataTaskProtocol
 }
 
 protocol URLSessionDataTaskProtocol {
@@ -18,15 +18,19 @@ protocol URLSessionDataTaskProtocol {
 }
 
 extension URLSession: URLSessionProtocol {
-  func dataTask(with request: NSURLRequest, completionHandler: @escaping URLSession.DataTaskResult) -> URLSessionDataTaskProtocol {
-    return dataTask(with: request, completionHandler: completionHandler) as URLSessionDataTaskProtocol
+  func dataTask(with request: URLRequest, completionHandler: @escaping URLSession.DataTaskResult) -> URLSessionDataTaskProtocol {
+    return dataTask(with: request, completionHandler: completionHandler) as URLSessionDataTask
+    
   }
 }
-extension URLSessionDataTask: URLSessionDataTaskProtocol {}
+extension URLSessionDataTask: URLSessionDataTaskProtocol {
+}
 
 
 class NetWorkManager: NSObject {
+  static var sharedManager = NetWorkManager()
   private let session: URLSessionProtocol?
+  private var sessionDataTask: URLSessionDataTaskProtocol?
   private var apiServiceProvider: APIServiceProvider?
   
   init(session: URLSessionProtocol = URLSession.shared) {
@@ -34,15 +38,19 @@ class NetWorkManager: NSObject {
     apiServiceProvider = APIServiceProvider()
   }
   
-  func getData(route: Route, queryParam: [String: String]?) {
+  func getData(route: Route, queryParam: [String: String]?, completion: @escaping (Data?, Error?) -> Void) {
     let request = apiServiceProvider?.getRequest(route: route, requestType: RequestType.GET, queryParam: queryParam)
     guard let req = request else {
       return
     }
     
-    self.session?.dataTask(with: req, completionHandler: { (data, response, error) in
+    sessionDataTask = self.session?.dataTask(with: req as URLRequest, completionHandler: { (data, response, error) in
       // here parse response
+      if let data = data {
+          completion(data, nil)
+      }
     })
+    sessionDataTask?.resume()
   }
   
 }

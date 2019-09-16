@@ -15,7 +15,7 @@ enum NetWorkConstants: CustomStringConvertible {
   var description: String {
     switch self {
     case .baseURL:
-      return "https://data.gov.sg/api/"
+      return "https://data.gov.sg/api/action/"
     case .resourceId:
       return "a807b7ab-6cad-4aa6-87d0-e283a7353a0f"
     }

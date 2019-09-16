@@ -9,10 +9,21 @@
 import UIKit
 
 class MobileDataUsageViewController: UIViewController {
-
+  
+    private lazy var moibileDataUsageViewModel: MobileDataUsageViewModel = {
+      let moibileDataUsageViewModel = MobileDataUsageViewModel()
+      return moibileDataUsageViewModel
+    } ()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      self.moibileDataUsageViewModel.getMobileUsageData { error in
+        if error == nil {
+          
+        } else {
+          // show error description
+        }
+      }
         // Do any additional setup after loading the view.
     }
     

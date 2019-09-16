@@ -21,6 +21,8 @@
 		DFFF2012232F910400BED9C0 /* APIServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2011232F910400BED9C0 /* APIServiceProvider.swift */; };
 		DFFF2015232F96AB00BED9C0 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2014232F96AB00BED9C0 /* NetWorkManager.swift */; };
 		DFFF2018232FC58B00BED9C0 /* MobileDataUsageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2017232FC58B00BED9C0 /* MobileDataUsageModel.swift */; };
+		DFFF201A232FC92300BED9C0 /* MobileDataUsageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2019232FC92300BED9C0 /* MobileDataUsageViewModel.swift */; };
+		DFFF201D232FDDE400BED9C0 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF201C232FDDE400BED9C0 /* Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		DFFF2011232F910400BED9C0 /* APIServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProvider.swift; sourceTree = "<group>"; };
 		DFFF2014232F96AB00BED9C0 /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 		DFFF2017232FC58B00BED9C0 /* MobileDataUsageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageModel.swift; sourceTree = "<group>"; };
+		DFFF2019232FC92300BED9C0 /* MobileDataUsageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageViewModel.swift; sourceTree = "<group>"; };
+		DFFF201C232FDDE400BED9C0 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		DFFF1FD0232E916E00BED9C0 /* SPH */ = {
 			isa = PBXGroup;
 			children = (
+				DFFF201B232FDDCA00BED9C0 /* Exstension */,
 				DFFF2016232F96F400BED9C0 /* Model */,
 				DFFF2001232F7DA400BED9C0 /* Network */,
 				DFFF2000232F7D9B00BED9C0 /* ViewModel */,
@@ -153,6 +158,7 @@
 		DFFF2000232F7D9B00BED9C0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DFFF2019232FC92300BED9C0 /* MobileDataUsageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -224,6 +230,14 @@
 				DFFF2017232FC58B00BED9C0 /* MobileDataUsageModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DFFF201B232FDDCA00BED9C0 /* Exstension */ = {
+			isa = PBXGroup;
+			children = (
+				DFFF201C232FDDE400BED9C0 /* Array.swift */,
+			);
+			path = Exstension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +375,9 @@
 				DFFF2009232F82AA00BED9C0 /* Route.swift in Sources */,
 				DFFF200C232F83FC00BED9C0 /* NetWorkConstants.swift in Sources */,
 				DFFF2005232F7EFA00BED9C0 /* APIRequest.swift in Sources */,
+				DFFF201A232FC92300BED9C0 /* MobileDataUsageViewModel.swift in Sources */,
 				DFFF2015232F96AB00BED9C0 /* NetWorkManager.swift in Sources */,
+				DFFF201D232FDDE400BED9C0 /* Array.swift in Sources */,
 				DFFF200F232F853700BED9C0 /* EndPoints.swift in Sources */,
 				DFFF2003232F7E1E00BED9C0 /* MobileDataUsageViewController.swift in Sources */,
 				DFFF2018232FC58B00BED9C0 /* MobileDataUsageModel.swift in Sources */,
