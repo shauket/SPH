@@ -8,8 +8,8 @@
 
 import UIKit
 
-class APIServiceProvider: NSObject {
-  var apiRequest: APIRequest?
+class APIServiceProvider {
+  private var apiRequest: APIRequest?
   func getRequest(route: Route, requestType: RequestType, queryParam: [String: String]? = nil, body: [String : Any]? = nil) -> NSURLRequest? {
     let headers = ["Content-Type" : "application/json"]
     apiRequest = APIRequest(route: route, method: requestType, queryParam: queryParam, headers: headers, body: body)

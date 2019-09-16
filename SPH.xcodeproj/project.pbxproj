@@ -19,6 +19,7 @@
 		DFFF200C232F83FC00BED9C0 /* NetWorkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF200B232F83FC00BED9C0 /* NetWorkConstants.swift */; };
 		DFFF200F232F853700BED9C0 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF200E232F853700BED9C0 /* EndPoints.swift */; };
 		DFFF2012232F910400BED9C0 /* APIServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2011232F910400BED9C0 /* APIServiceProvider.swift */; };
+		DFFF2015232F96AB00BED9C0 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2014232F96AB00BED9C0 /* NetWorkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		DFFF200B232F83FC00BED9C0 /* NetWorkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkConstants.swift; sourceTree = "<group>"; };
 		DFFF200E232F853700BED9C0 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		DFFF2011232F910400BED9C0 /* APIServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProvider.swift; sourceTree = "<group>"; };
+		DFFF2014232F96AB00BED9C0 /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		DFFF1FD0232E916E00BED9C0 /* SPH */ = {
 			isa = PBXGroup;
 			children = (
+				DFFF2016232F96F400BED9C0 /* Model */,
 				DFFF2001232F7DA400BED9C0 /* Network */,
 				DFFF2000232F7D9B00BED9C0 /* ViewModel */,
 				DFFF1FFF232F7D9000BED9C0 /* UI */,
@@ -155,6 +158,7 @@
 		DFFF2001232F7DA400BED9C0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				DFFF2013232F968600BED9C0 /* Manager */,
 				DFFF2010232F90E800BED9C0 /* ServiceProvider */,
 				DFFF200D232F851E00BED9C0 /* EndPoints */,
 				DFFF200A232F83E300BED9C0 /* Constatns */,
@@ -202,6 +206,21 @@
 				DFFF2011232F910400BED9C0 /* APIServiceProvider.swift */,
 			);
 			path = ServiceProvider;
+			sourceTree = "<group>";
+		};
+		DFFF2013232F968600BED9C0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DFFF2014232F96AB00BED9C0 /* NetWorkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DFFF2016232F96F400BED9C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +358,7 @@
 				DFFF2009232F82AA00BED9C0 /* Route.swift in Sources */,
 				DFFF200C232F83FC00BED9C0 /* NetWorkConstants.swift in Sources */,
 				DFFF2005232F7EFA00BED9C0 /* APIRequest.swift in Sources */,
+				DFFF2015232F96AB00BED9C0 /* NetWorkManager.swift in Sources */,
 				DFFF200F232F853700BED9C0 /* EndPoints.swift in Sources */,
 				DFFF2003232F7E1E00BED9C0 /* MobileDataUsageViewController.swift in Sources */,
 				DFFF2012232F910400BED9C0 /* APIServiceProvider.swift in Sources */,
