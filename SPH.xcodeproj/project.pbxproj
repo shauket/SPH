@@ -14,6 +14,10 @@
 		DFFF1FE7232E917100BED9C0 /* SPHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF1FE6232E917100BED9C0 /* SPHTests.swift */; };
 		DFFF1FF2232E917100BED9C0 /* SPHUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF1FF1232E917100BED9C0 /* SPHUITests.swift */; };
 		DFFF2003232F7E1E00BED9C0 /* MobileDataUsageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2002232F7E1E00BED9C0 /* MobileDataUsageViewController.swift */; };
+		DFFF2005232F7EFA00BED9C0 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2004232F7EFA00BED9C0 /* APIRequest.swift */; };
+		DFFF2009232F82AA00BED9C0 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2008232F82AA00BED9C0 /* Route.swift */; };
+		DFFF200C232F83FC00BED9C0 /* NetWorkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF200B232F83FC00BED9C0 /* NetWorkConstants.swift */; };
+		DFFF200F232F853700BED9C0 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF200E232F853700BED9C0 /* EndPoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		DFFF1FF1232E917100BED9C0 /* SPHUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPHUITests.swift; sourceTree = "<group>"; };
 		DFFF1FF3232E917100BED9C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFFF2002232F7E1E00BED9C0 /* MobileDataUsageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageViewController.swift; sourceTree = "<group>"; };
+		DFFF2004232F7EFA00BED9C0 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		DFFF2008232F82AA00BED9C0 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		DFFF200B232F83FC00BED9C0 /* NetWorkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkConstants.swift; sourceTree = "<group>"; };
+		DFFF200E232F853700BED9C0 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +153,44 @@
 		DFFF2001232F7DA400BED9C0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				DFFF200D232F851E00BED9C0 /* EndPoints */,
+				DFFF200A232F83E300BED9C0 /* Constatns */,
+				DFFF2007232F828000BED9C0 /* Request */,
+				DFFF2006232F827200BED9C0 /* Route */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		DFFF2006232F827200BED9C0 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				DFFF2008232F82AA00BED9C0 /* Route.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		DFFF2007232F828000BED9C0 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DFFF2004232F7EFA00BED9C0 /* APIRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DFFF200A232F83E300BED9C0 /* Constatns */ = {
+			isa = PBXGroup;
+			children = (
+				DFFF200B232F83FC00BED9C0 /* NetWorkConstants.swift */,
+			);
+			path = Constatns;
+			sourceTree = "<group>";
+		};
+		DFFF200D232F851E00BED9C0 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				DFFF200E232F853700BED9C0 /* EndPoints.swift */,
+			);
+			path = EndPoints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +325,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFFF1FD2232E916E00BED9C0 /* AppDelegate.swift in Sources */,
+				DFFF2009232F82AA00BED9C0 /* Route.swift in Sources */,
+				DFFF200C232F83FC00BED9C0 /* NetWorkConstants.swift in Sources */,
+				DFFF2005232F7EFA00BED9C0 /* APIRequest.swift in Sources */,
+				DFFF200F232F853700BED9C0 /* EndPoints.swift in Sources */,
 				DFFF2003232F7E1E00BED9C0 /* MobileDataUsageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
