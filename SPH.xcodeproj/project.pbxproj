@@ -20,6 +20,7 @@
 		DFFF200F232F853700BED9C0 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF200E232F853700BED9C0 /* EndPoints.swift */; };
 		DFFF2012232F910400BED9C0 /* APIServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2011232F910400BED9C0 /* APIServiceProvider.swift */; };
 		DFFF2015232F96AB00BED9C0 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2014232F96AB00BED9C0 /* NetWorkManager.swift */; };
+		DFFF2018232FC58B00BED9C0 /* MobileDataUsageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2017232FC58B00BED9C0 /* MobileDataUsageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DFFF200E232F853700BED9C0 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		DFFF2011232F910400BED9C0 /* APIServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProvider.swift; sourceTree = "<group>"; };
 		DFFF2014232F96AB00BED9C0 /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
+		DFFF2017232FC58B00BED9C0 /* MobileDataUsageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 		DFFF2016232F96F400BED9C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DFFF2017232FC58B00BED9C0 /* MobileDataUsageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				DFFF2015232F96AB00BED9C0 /* NetWorkManager.swift in Sources */,
 				DFFF200F232F853700BED9C0 /* EndPoints.swift in Sources */,
 				DFFF2003232F7E1E00BED9C0 /* MobileDataUsageViewController.swift in Sources */,
+				DFFF2018232FC58B00BED9C0 /* MobileDataUsageModel.swift in Sources */,
 				DFFF2012232F910400BED9C0 /* APIServiceProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
