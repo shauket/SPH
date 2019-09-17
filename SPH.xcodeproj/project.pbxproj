@@ -23,6 +23,7 @@
 		DFFF2018232FC58B00BED9C0 /* MobileDataUsageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2017232FC58B00BED9C0 /* MobileDataUsageModel.swift */; };
 		DFFF201A232FC92300BED9C0 /* MobileDataUsageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2019232FC92300BED9C0 /* MobileDataUsageViewModel.swift */; };
 		DFFF201D232FDDE400BED9C0 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF201C232FDDE400BED9C0 /* Array.swift */; };
+		DFFF202123311CEC00BED9C0 /* MobileDataUsageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF202023311CEC00BED9C0 /* MobileDataUsageCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		DFFF2017232FC58B00BED9C0 /* MobileDataUsageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageModel.swift; sourceTree = "<group>"; };
 		DFFF2019232FC92300BED9C0 /* MobileDataUsageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageViewModel.swift; sourceTree = "<group>"; };
 		DFFF201C232FDDE400BED9C0 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		DFFF202023311CEC00BED9C0 /* MobileDataUsageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				DFFF2002232F7E1E00BED9C0 /* MobileDataUsageViewController.swift */,
+				DFFF202023311CEC00BED9C0 /* MobileDataUsageCellView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				DFFF200F232F853700BED9C0 /* EndPoints.swift in Sources */,
 				DFFF2003232F7E1E00BED9C0 /* MobileDataUsageViewController.swift in Sources */,
 				DFFF2018232FC58B00BED9C0 /* MobileDataUsageModel.swift in Sources */,
+				DFFF202123311CEC00BED9C0 /* MobileDataUsageCellView.swift in Sources */,
 				DFFF2012232F910400BED9C0 /* APIServiceProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
