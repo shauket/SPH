@@ -8,8 +8,13 @@
 
 import UIKit
 
-class MobileDataUsageViewController: UITableViewController {
+class MobileDataUsageViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+    
+    private var isLoading: Bool = true
+    private var activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+
     private lazy var moibileDataUsageViewModel: MobileDataUsageViewModel = {
       let moibileDataUsageViewModel = MobileDataUsageViewModel()
       return moibileDataUsageViewModel
@@ -17,51 +22,71 @@ class MobileDataUsageViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // tableview delegate
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.activityIndicator.center = self.view.center
+        self.view.addSubview(activityIndicator)
+        activityIndicator.isHidden = true
+        self.requestForData()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
+    
+    func requestForData() {
+        startActivityIndicator()
         self.moibileDataUsageViewModel.getMobileUsageData { error in
             if error == nil {
                 DispatchQueue.main.async {
+                    self.stopActivityIndicator()
                     self.tableView.reloadData()
                 }
+                self.isLoading = false
             } else {
                 // show error description
                 self.showAlert(error!.localizedDescription)
             }
         }
     }
-    
+}
+
+extension MobileDataUsageViewController: UITableViewDelegate {
     // Mark: TableView Deletgate methods
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.moibileDataUsageViewModel.getHeaderTitle(section: section)
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
     
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30.0
     }
-
     
-    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let header = view as? UITableViewHeaderFooterView {
+            header.textLabel?.textColor = UIColor.white
             header.textLabel!.font = UIFont.systemFont(ofSize: 16.0)
             header.backgroundView?.backgroundColor = UIColor.black
         }
     }
+}
 
+extension MobileDataUsageViewController: UITableViewDataSource {
     // Mark: TabelView DataSource methods
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return self.moibileDataUsageViewModel.getNumberOfSections()
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.moibileDataUsageViewModel.getNumberOfRows(section)
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MobileDataUsageCellView
         cell.delegate = self
         let data = self.moibileDataUsageViewModel.getRecordForRow(indexPath: indexPath)
@@ -72,7 +97,32 @@ class MobileDataUsageViewController: UITableViewController {
         return cell
     }
 }
-
+extension MobileDataUsageViewController: UIScrollViewDelegate {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        
+        print("scrollViewWillBeginDragging")
+        isLoading = false
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        print("scrollViewDidEndDecelerating")
+    }
+    
+    //Pagination
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+        print("scrollViewDidEndDragging")
+        if ((tableView.contentOffset.y + tableView.frame.size.height) >= tableView.contentSize.height)
+        {
+            if !isLoading && self.moibileDataUsageViewModel.canSendRequest() {
+                isLoading = true
+                self.requestForData()
+            }
+        }
+        
+    }
+    
+}
 extension MobileDataUsageViewController: AlertDelegate {
     func showAlert(message: String) {
         self.showAlert(message)
@@ -85,4 +135,18 @@ extension MobileDataUsageViewController {
             
             }))
         self.present(alert, animated: true, completion: nil)    }
+}
+
+extension MobileDataUsageViewController {
+    func startActivityIndicator() {
+        activityIndicator.isHidden = false
+        DispatchQueue.main.async {
+            self.activityIndicator.startAnimating()
+        }
+    }
+    
+    func stopActivityIndicator() {
+        activityIndicator.isHidden = true
+        activityIndicator.stopAnimating()
+    }
 }

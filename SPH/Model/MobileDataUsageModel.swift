@@ -10,22 +10,23 @@ import UIKit
 
 // MARK: - Root
 struct MobileDataUsageModel: Codable {
-  let help: String
-  let result: Result
+    let help: String
+    let result: Result
 }
 
 struct Result: Codable{
-  let resourceID: String
-  let fields: [Field]
-  let records: [Record]
-  let links: Links
-  let limit, total: Int
+    let resourceID: String
+    let fields: [Field]
+    let records: [Record]
+    let links: Links
+    let limit, total: Int
+    let offset: Int?
   
   enum CodingKeys: String, CodingKey {
     case resourceID = "resource_id"
     case fields, records
     case links = "_links"
-    case limit, total
+    case limit, total, offset
   }
 }
 

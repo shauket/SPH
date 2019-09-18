@@ -26,9 +26,14 @@ class MobileDataUsageCellView: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    override func prepareForReuse() {
+        self.quarterLabel.text = ""
+        self.usageDataLabel.text = ""
+    }
+    
     func configure(record: Record, canShow: Bool) {
-        quarterLabel.text?.append(record.quarterStr)
-        usageDataLabel.text?.append(record.volumeOfMobileData)
+        quarterLabel.text = "Quarter: " + record.quarterStr
+        usageDataLabel.text = "Data Usage: " + record.volumeOfMobileData
         self.infoButton.isHidden = !canShow
     }
     
