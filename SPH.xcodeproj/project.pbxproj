@@ -24,6 +24,9 @@
 		DFFF201A232FC92300BED9C0 /* MobileDataUsageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF2019232FC92300BED9C0 /* MobileDataUsageViewModel.swift */; };
 		DFFF201D232FDDE400BED9C0 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF201C232FDDE400BED9C0 /* Array.swift */; };
 		DFFF202123311CEC00BED9C0 /* MobileDataUsageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF202023311CEC00BED9C0 /* MobileDataUsageCellView.swift */; };
+		DFFF202323321B8900BED9C0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF202223321B8900BED9C0 /* Data.swift */; };
+		DFFF202523321BAA00BED9C0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF202423321BAA00BED9C0 /* String.swift */; };
+		DFFF20282332298700BED9C0 /* LocalDataRepositery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF20272332298700BED9C0 /* LocalDataRepositery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		DFFF2019232FC92300BED9C0 /* MobileDataUsageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageViewModel.swift; sourceTree = "<group>"; };
 		DFFF201C232FDDE400BED9C0 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		DFFF202023311CEC00BED9C0 /* MobileDataUsageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageCellView.swift; sourceTree = "<group>"; };
+		DFFF202223321B8900BED9C0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		DFFF202423321BAA00BED9C0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		DFFF20272332298700BED9C0 /* LocalDataRepositery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataRepositery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 		DFFF1FD0232E916E00BED9C0 /* SPH */ = {
 			isa = PBXGroup;
 			children = (
+				DFFF20262332294C00BED9C0 /* Repositery */,
 				DFFF201B232FDDCA00BED9C0 /* Exstension */,
 				DFFF2016232F96F400BED9C0 /* Model */,
 				DFFF2001232F7DA400BED9C0 /* Network */,
@@ -239,8 +246,18 @@
 			isa = PBXGroup;
 			children = (
 				DFFF201C232FDDE400BED9C0 /* Array.swift */,
+				DFFF202223321B8900BED9C0 /* Data.swift */,
+				DFFF202423321BAA00BED9C0 /* String.swift */,
 			);
 			path = Exstension;
+			sourceTree = "<group>";
+		};
+		DFFF20262332294C00BED9C0 /* Repositery */ = {
+			isa = PBXGroup;
+			children = (
+				DFFF20272332298700BED9C0 /* LocalDataRepositery.swift */,
+			);
+			path = Repositery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,11 +394,14 @@
 				DFFF1FD2232E916E00BED9C0 /* AppDelegate.swift in Sources */,
 				DFFF2009232F82AA00BED9C0 /* Route.swift in Sources */,
 				DFFF200C232F83FC00BED9C0 /* NetWorkConstants.swift in Sources */,
+				DFFF20282332298700BED9C0 /* LocalDataRepositery.swift in Sources */,
 				DFFF2005232F7EFA00BED9C0 /* APIRequest.swift in Sources */,
+				DFFF202523321BAA00BED9C0 /* String.swift in Sources */,
 				DFFF201A232FC92300BED9C0 /* MobileDataUsageViewModel.swift in Sources */,
 				DFFF2015232F96AB00BED9C0 /* NetWorkManager.swift in Sources */,
 				DFFF201D232FDDE400BED9C0 /* Array.swift in Sources */,
 				DFFF200F232F853700BED9C0 /* EndPoints.swift in Sources */,
+				DFFF202323321B8900BED9C0 /* Data.swift in Sources */,
 				DFFF2003232F7E1E00BED9C0 /* MobileDataUsageViewController.swift in Sources */,
 				DFFF2018232FC58B00BED9C0 /* MobileDataUsageModel.swift in Sources */,
 				DFFF202123311CEC00BED9C0 /* MobileDataUsageCellView.swift in Sources */,

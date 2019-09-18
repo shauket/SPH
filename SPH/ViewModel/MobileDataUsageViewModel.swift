@@ -6,7 +6,8 @@
 //  Copyright © 2019 Muhammad, Shauket | RASIA. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import Network
 
 class MobileDataUsageViewModel: NSObject {
     private let data_limit_per_request = 10
@@ -14,28 +15,31 @@ class MobileDataUsageViewModel: NSObject {
     private var offset: Int = 0
     private var limit: Int = 0
     private var total: Int = 0
+    private var isOffline: Bool = false
     
     func getMobileUsageData(completion: @escaping (Error?) -> Void) {
         
         NetWorkManager.sharedManager.getData(route: Route.search, queryParam: ["resource_id" : NetWorkConstants.resourceId.description,"offset": String(self.offset), "limit": String(data_limit_per_request)]) { (data, error) in
-          if let data = data {
-            do {
-                let mobileData = try JSONDecoder().decode(MobileDataUsageModel.self, from: data)
-                self.limit = mobileData.result.limit
-                self.offset = mobileData.result.offset ?? 0
-                self.total = mobileData.result.total
-                self.populateData(records: mobileData.result.records)
+            if let data = data {
+                self.isOffline = false
+                self.parseJsonData(data)
                 completion(nil)
-            } catch {
-                completion(error)
-            }
-            
+                
+            } else { // in case offline
+                if let err = error as? URLError, err.code  == URLError.Code.notConnectedToInternet {
+                    print("internet error")
+                    self.isOffline = true
+                    if let data = LocalDataRepositery.getLocalData() {
+                        self.parseOffLineData(data)
+                        completion(nil)
+                    }
+                }
             }
         }
     }
 
-    func populateData(records: [Record]) {
-        if self.mobileUsageData.count > 0 {
+    func populateData(_ records: [Record]) {
+        if self.mobileUsageData.count > 0 && !isOffline {
             var unsortedData = self.mobileUsageData.flatMap { $0 }
             unsortedData = unsortedData + records
             let groupedData = unsortedData.group { $0.year }
@@ -85,5 +89,34 @@ class MobileDataUsageViewModel: NSObject {
         
     func canSendRequest() -> Bool {
         return self.offset < total
+    }
+}
+
+extension MobileDataUsageViewModel {
+    func parseJsonData(_ data: Data) {
+        do {
+            let mobileData = try JSONDecoder().decode(MobileDataUsageModel.self, from: data)
+            self.limit = mobileData.result.limit
+            self.offset = mobileData.result.offset ?? 0
+            self.total = mobileData.result.total
+            self.populateData(mobileData.result.records)
+            var jsonData = try JSONEncoder().encode(mobileData.result.records)
+            jsonData.writeToFile(withName: "mobileData")
+
+        } catch {
+            print(error)
+        }
+    }
+    
+    func parseOffLineData(_ data: Data) {
+        do {
+            var records = try JSONDecoder().decode([Record].self, from: data)
+            self.offset = records.count
+            self.total = 59;
+            records.sort{ $0.year < $1.year} // show sorted data
+            self.populateData(records)
+        } catch {
+            print(error)
+        }
     }
 }

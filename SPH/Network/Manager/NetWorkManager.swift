@@ -45,10 +45,11 @@ class NetWorkManager: NSObject {
     }
     
     sessionDataTask = self.session?.dataTask(with: req as URLRequest, completionHandler: { (data, response, error) in
-      // here parse response
-      if let data = data {
-          completion(data, nil)
-      }
+        if let data = data {
+            completion(data, nil)
+        } else {
+            completion(nil, error)
+        }
     })
     sessionDataTask?.resume()
   }
