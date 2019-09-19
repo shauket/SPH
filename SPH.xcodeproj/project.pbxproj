@@ -30,6 +30,10 @@
 		DFFF202A2332862700BED9C0 /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF20292332862700BED9C0 /* URLSessionDataTaskMock.swift */; };
 		DFFF202C2332878100BED9C0 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF202B2332878100BED9C0 /* URLSessionMock.swift */; };
 		DFFF202E23328AA700BED9C0 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF202D23328AA700BED9C0 /* NetworkManagerTests.swift */; };
+		DFFF20302333264600BED9C0 /* ErroMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF202F2333264600BED9C0 /* ErroMock.swift */; };
+		DFFF20322333728B00BED9C0 /* MobileDataUsageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF20312333728B00BED9C0 /* MobileDataUsageViewModelTests.swift */; };
+		DFFF203423338C6900BED9C0 /* MobileDataUSageModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF203323338C6900BED9C0 /* MobileDataUSageModelTest.swift */; };
+		DFFF203623338E2600BED9C0 /* DataExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF203523338E2600BED9C0 /* DataExtensionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,10 @@
 		DFFF20292332862700BED9C0 /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
 		DFFF202B2332878100BED9C0 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
 		DFFF202D23328AA700BED9C0 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		DFFF202F2333264600BED9C0 /* ErroMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErroMock.swift; sourceTree = "<group>"; };
+		DFFF20312333728B00BED9C0 /* MobileDataUsageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUsageViewModelTests.swift; sourceTree = "<group>"; };
+		DFFF203323338C6900BED9C0 /* MobileDataUSageModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDataUSageModelTest.swift; sourceTree = "<group>"; };
+		DFFF203523338E2600BED9C0 /* DataExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensionTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,10 @@
 				DFFF20292332862700BED9C0 /* URLSessionDataTaskMock.swift */,
 				DFFF202B2332878100BED9C0 /* URLSessionMock.swift */,
 				DFFF202D23328AA700BED9C0 /* NetworkManagerTests.swift */,
+				DFFF202F2333264600BED9C0 /* ErroMock.swift */,
+				DFFF20312333728B00BED9C0 /* MobileDataUsageViewModelTests.swift */,
+				DFFF203323338C6900BED9C0 /* MobileDataUSageModelTest.swift */,
+				DFFF203523338E2600BED9C0 /* DataExtensionTest.swift */,
 			);
 			path = SPHTests;
 			sourceTree = "<group>";
@@ -422,8 +434,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFFF203423338C6900BED9C0 /* MobileDataUSageModelTest.swift in Sources */,
+				DFFF203623338E2600BED9C0 /* DataExtensionTest.swift in Sources */,
+				DFFF20322333728B00BED9C0 /* MobileDataUsageViewModelTests.swift in Sources */,
 				DFFF202E23328AA700BED9C0 /* NetworkManagerTests.swift in Sources */,
 				DFFF202C2332878100BED9C0 /* URLSessionMock.swift in Sources */,
+				DFFF20302333264600BED9C0 /* ErroMock.swift in Sources */,
 				DFFF1FE7232E917100BED9C0 /* SPHTests.swift in Sources */,
 				DFFF202A2332862700BED9C0 /* URLSessionDataTaskMock.swift in Sources */,
 			);

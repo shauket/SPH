@@ -17,6 +17,10 @@ class MobileDataUsageViewModel: NSObject {
     private var total: Int = 0
     private var isOffline: Bool = false
     
+    func getRecords() -> [[Record]] {
+        return self.mobileUsageData
+    }
+    
     func getMobileUsageData(completion: @escaping (Error?) -> Void) {
         
         NetWorkManager.sharedManager.getData(route: Route.search, queryParam: ["resource_id" : NetWorkConstants.resourceId.description,"offset": String(self.offset), "limit": String(data_limit_per_request)]) { (data, error) in

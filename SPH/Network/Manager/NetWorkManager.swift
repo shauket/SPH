@@ -24,7 +24,8 @@ class NetWorkManager: NSObject {
       return
     }
     
-    self.session?.dataTask(with: req as URLRequest, completionHandler: { (data, response, error) in
+    self.session?.dataTask(with: req as URLRequest, completionHandler: { (data, _, error) in
+        
         if let data = data {
             completion(data, nil)
         } else {

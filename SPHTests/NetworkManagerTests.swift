@@ -40,4 +40,21 @@ class NetworkManagerTests: XCTestCase {
             XCTAssertEqual(jsonData, data)
         }
     }
+    
+    func testInternalServerError() {
+        // Setup our objects
+        let session = URLSessionMock()
+        session.error = MockedError.internalServer
+        let manager = NetWorkManager(session: session)
+        
+        // Setup param for request
+        let params = ["resource_id" : "a807b7ab-6cad-4aa6-87d0-e283a7353a0f", "limit": "1"]
+        
+        
+        manager.getData(route: Route.search, queryParam: params) { (data, error) in
+            let err = error as! NSError
+            XCTAssertNotNil(error, "Error should not be nil")
+            XCTAssertEqual(err.code, MockedError(rawValue: 500)!.rawValue)
+        }
+    }
 }
