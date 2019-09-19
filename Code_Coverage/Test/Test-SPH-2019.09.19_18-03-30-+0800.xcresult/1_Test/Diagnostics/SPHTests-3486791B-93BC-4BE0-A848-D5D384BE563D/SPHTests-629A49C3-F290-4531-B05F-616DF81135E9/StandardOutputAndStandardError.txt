@@ -1,0 +1,11 @@
+Test Suite 'Selected tests' started at 2019-09-19 18:03:36.320
+Test Suite 'SPHTests.xctest' started at 2019-09-19 18:03:36.336
+Test Suite 'MobileDataUsageViewModelTests' started at 2019-09-19 18:03:36.336
+Test Case '-[SPHTests.MobileDataUsageViewModelTests testMobileDataArrayContainCorrectRecord]' started.
+Test Case '-[SPHTests.MobileDataUsageViewModelTests testMobileDataArrayContainCorrectRecord]' passed (0.005 seconds).
+Test Suite 'MobileDataUsageViewModelTests' passed at 2019-09-19 18:03:36.342.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'SPHTests.xctest' passed at 2019-09-19 18:03:36.342.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
+Test Suite 'Selected tests' passed at 2019-09-19 18:03:36.343.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.005 (0.023) seconds

@@ -1,0 +1,10 @@
+Test Suite 'Selected tests' started at 2019-09-19 18:09:52.389
+Test Suite 'SPHTests.xctest' started at 2019-09-19 18:09:52.390
+Test Suite 'MobileDataUsageViewModelTests' started at 2019-09-19 18:09:52.390
+Test Case '-[SPHTests.MobileDataUsageViewModelTests testHeaderTitles]' started.
+Fatal error: Index out of range
+2019-09-19 18:09:52.397093+0800 SPH[65249:4594033] Fatal error: Index out of range
+
+
+*** If you believe this error represents a bug, please attach the result bundle at /Users/muhammad.shauket/Library/Developer/Xcode/DerivedData/SPH-biqhplhwytkhacczyvuxojvkfgow/Logs/Test/Test-SPH-2019.09.19_18-09-40-+0800.xcresult
+

@@ -1,0 +1,11 @@
+Test Suite 'Selected tests' started at 2019-09-19 18:20:37.181
+Test Suite 'SPHTests.xctest' started at 2019-09-19 18:20:37.182
+Test Suite 'MobileDataUsageModelTest' started at 2019-09-19 18:20:37.182
+Test Case '-[SPHTests.MobileDataUsageModelTest testDataIsPopuplatingInModel]' started.
+Test Case '-[SPHTests.MobileDataUsageModelTest testDataIsPopuplatingInModel]' passed (0.022 seconds).
+Test Suite 'MobileDataUsageModelTest' passed at 2019-09-19 18:20:37.205.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.022 (0.023) seconds
+Test Suite 'SPHTests.xctest' passed at 2019-09-19 18:20:37.205.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.022 (0.024) seconds
+Test Suite 'Selected tests' passed at 2019-09-19 18:20:37.206.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.022 (0.025) seconds

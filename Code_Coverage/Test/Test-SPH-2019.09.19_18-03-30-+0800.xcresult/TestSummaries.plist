@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FormatVersion</key>
+	<string>1.1</string>
+	<key>TestableSummaries</key>
+	<array>
+		<dict>
+			<key>DiagnosticsDirectory</key>
+			<string>SPHTests-3486791B-93BC-4BE0-A848-D5D384BE563D</string>
+			<key>ProjectPath</key>
+			<string>SPH.xcodeproj</string>
+			<key>TargetName</key>
+			<string>SPHTests</string>
+			<key>TestKind</key>
+			<string>app hosted</string>
+			<key>TestName</key>
+			<string>SPHTests</string>
+			<key>TestObjectClass</key>
+			<string>IDESchemeActionTestableSummary</string>
+			<key>Tests</key>
+			<array>
+				<dict>
+					<key>Duration</key>
+					<real>0.023176908493041992</real>
+					<key>Subtests</key>
+					<array>
+						<dict>
+							<key>Duration</key>
+							<real>0.0066239833831787109</real>
+							<key>Subtests</key>
+							<array>
+								<dict>
+									<key>Duration</key>
+									<real>0.0056929588317871094</real>
+									<key>Subtests</key>
+									<array>
+										<dict>
+											<key>Duration</key>
+											<real>0.0047529935836791992</real>
+											<key>TestIdentifier</key>
+											<string>MobileDataUsageViewModelTests/testMobileDataArrayContainCorrectRecord()</string>
+											<key>TestName</key>
+											<string>testMobileDataArrayContainCorrectRecord()</string>
+											<key>TestObjectClass</key>
+											<string>IDESchemeActionTestSummary</string>
+											<key>TestStatus</key>
+											<string>Success</string>
+											<key>TestSummaryGUID</key>
+											<string>7157DAA8-745D-40AA-B1B5-D17FB1F95C0D</string>
+										</dict>
+									</array>
+									<key>TestIdentifier</key>
+									<string>MobileDataUsageViewModelTests</string>
+									<key>TestName</key>
+									<string>MobileDataUsageViewModelTests</string>
+									<key>TestObjectClass</key>
+									<string>IDESchemeActionTestSummaryGroup</string>
+								</dict>
+							</array>
+							<key>TestIdentifier</key>
+							<string>SPHTests.xctest</string>
+							<key>TestName</key>
+							<string>SPHTests.xctest</string>
+							<key>TestObjectClass</key>
+							<string>IDESchemeActionTestSummaryGroup</string>
+						</dict>
+					</array>
+					<key>TestIdentifier</key>
+					<string>Selected tests</string>
+					<key>TestName</key>
+					<string>Selected tests</string>
+					<key>TestObjectClass</key>
+					<string>IDESchemeActionTestSummaryGroup</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

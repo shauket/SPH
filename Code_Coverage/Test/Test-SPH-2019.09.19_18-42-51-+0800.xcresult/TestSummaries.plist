@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FormatVersion</key>
+	<string>1.1</string>
+	<key>TestableSummaries</key>
+	<array>
+		<dict>
+			<key>DiagnosticsDirectory</key>
+			<string>SPHTests-B11FC0E9-A4D4-461F-8C60-930230F8FAC4</string>
+			<key>ProjectPath</key>
+			<string>SPH.xcodeproj</string>
+			<key>TargetName</key>
+			<string>SPHTests</string>
+			<key>TestKind</key>
+			<string>app hosted</string>
+			<key>TestName</key>
+			<string>SPHTests</string>
+			<key>TestObjectClass</key>
+			<string>IDESchemeActionTestableSummary</string>
+			<key>Tests</key>
+			<array>
+				<dict>
+					<key>Duration</key>
+					<real>0.033365011215209961</real>
+					<key>Subtests</key>
+					<array>
+						<dict>
+							<key>Duration</key>
+							<real>0.031591057777404785</real>
+							<key>Subtests</key>
+							<array>
+								<dict>
+									<key>Duration</key>
+									<real>0.03059697151184082</real>
+									<key>Subtests</key>
+									<array>
+										<dict>
+											<key>ActivitySummaries</key>
+											<array>
+												<dict>
+													<key>ActivityType</key>
+													<string>com.apple.dt.xctest.activity-type.testAssertionFailure</string>
+													<key>FinishTimeInterval</key>
+													<real>590582576.29322302</real>
+													<key>StartTimeInterval</key>
+													<real>590582576.29128397</real>
+													<key>Title</key>
+													<string>Assertion Failure: DataExtensionTest.swift:45: XCTAssertTrue failed</string>
+													<key>UUID</key>
+													<string>A6334F1B-4955-4616-904D-4C1083020701</string>
+												</dict>
+											</array>
+											<key>Duration</key>
+											<real>0.029663920402526855</real>
+											<key>FailureSummaries</key>
+											<array>
+												<dict>
+													<key>FileName</key>
+													<string>/Users/muhammad.shauket/Desktop/poc/SPH/SPHTests/DataExtensionTest.swift</string>
+													<key>LineNumber</key>
+													<integer>45</integer>
+													<key>Message</key>
+													<string>XCTAssertTrue failed</string>
+													<key>PerformanceFailure</key>
+													<false/>
+												</dict>
+											</array>
+											<key>TestIdentifier</key>
+											<string>DataExtensionTest/testFlushFile()</string>
+											<key>TestName</key>
+											<string>testFlushFile()</string>
+											<key>TestObjectClass</key>
+											<string>IDESchemeActionTestSummary</string>
+											<key>TestStatus</key>
+											<string>Failure</string>
+											<key>TestSummaryGUID</key>
+											<string>EE34BF79-6771-476E-98E6-783DE8E324D3</string>
+										</dict>
+									</array>
+									<key>TestIdentifier</key>
+									<string>DataExtensionTest</string>
+									<key>TestName</key>
+									<string>DataExtensionTest</string>
+									<key>TestObjectClass</key>
+									<string>IDESchemeActionTestSummaryGroup</string>
+								</dict>
+							</array>
+							<key>TestIdentifier</key>
+							<string>SPHTests.xctest</string>
+							<key>TestName</key>
+							<string>SPHTests.xctest</string>
+							<key>TestObjectClass</key>
+							<string>IDESchemeActionTestSummaryGroup</string>
+						</dict>
+					</array>
+					<key>TestIdentifier</key>
+					<string>Selected tests</string>
+					<key>TestName</key>
+					<string>Selected tests</string>
+					<key>TestObjectClass</key>
+					<string>IDESchemeActionTestSummaryGroup</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

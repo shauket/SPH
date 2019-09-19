@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FormatVersion</key>
+	<string>1.1</string>
+	<key>TestableSummaries</key>
+	<array>
+		<dict>
+			<key>DiagnosticsDirectory</key>
+			<string>SPHTests-CD6B2045-3E48-447D-A1BB-22D2D0C372AA</string>
+			<key>ProjectPath</key>
+			<string>SPH.xcodeproj</string>
+			<key>TargetName</key>
+			<string>SPHTests</string>
+			<key>TestKind</key>
+			<string>app hosted</string>
+			<key>TestName</key>
+			<string>SPHTests</string>
+			<key>TestObjectClass</key>
+			<string>IDESchemeActionTestableSummary</string>
+			<key>Tests</key>
+			<array>
+				<dict>
+					<key>Duration</key>
+					<real>0.025454998016357422</real>
+					<key>Subtests</key>
+					<array>
+						<dict>
+							<key>Duration</key>
+							<real>0.024226069450378418</real>
+							<key>Subtests</key>
+							<array>
+								<dict>
+									<key>Duration</key>
+									<real>0.023383021354675293</real>
+									<key>Subtests</key>
+									<array>
+										<dict>
+											<key>Duration</key>
+											<real>0.022436022758483887</real>
+											<key>TestIdentifier</key>
+											<string>DataExtensionTest/testFlushFile()</string>
+											<key>TestName</key>
+											<string>testFlushFile()</string>
+											<key>TestObjectClass</key>
+											<string>IDESchemeActionTestSummary</string>
+											<key>TestStatus</key>
+											<string>Success</string>
+											<key>TestSummaryGUID</key>
+											<string>CB922B88-F33A-422E-9395-0E7C7E63E313</string>
+										</dict>
+									</array>
+									<key>TestIdentifier</key>
+									<string>DataExtensionTest</string>
+									<key>TestName</key>
+									<string>DataExtensionTest</string>
+									<key>TestObjectClass</key>
+									<string>IDESchemeActionTestSummaryGroup</string>
+								</dict>
+							</array>
+							<key>TestIdentifier</key>
+							<string>SPHTests.xctest</string>
+							<key>TestName</key>
+							<string>SPHTests.xctest</string>
+							<key>TestObjectClass</key>
+							<string>IDESchemeActionTestSummaryGroup</string>
+						</dict>
+					</array>
+					<key>TestIdentifier</key>
+					<string>Selected tests</string>
+					<key>TestName</key>
+					<string>Selected tests</string>
+					<key>TestObjectClass</key>
+					<string>IDESchemeActionTestSummaryGroup</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

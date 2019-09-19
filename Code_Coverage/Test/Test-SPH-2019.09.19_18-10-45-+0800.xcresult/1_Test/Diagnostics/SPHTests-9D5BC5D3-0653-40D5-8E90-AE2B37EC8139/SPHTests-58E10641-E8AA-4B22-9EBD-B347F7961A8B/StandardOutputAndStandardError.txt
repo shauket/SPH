@@ -1,0 +1,11 @@
+Test Suite 'Selected tests' started at 2019-09-19 18:10:51.155
+Test Suite 'SPHTests.xctest' started at 2019-09-19 18:10:51.156
+Test Suite 'MobileDataUsageViewModelTests' started at 2019-09-19 18:10:51.156
+Test Case '-[SPHTests.MobileDataUsageViewModelTests testHeaderTitles]' started.
+Test Case '-[SPHTests.MobileDataUsageViewModelTests testHeaderTitles]' passed (0.009 seconds).
+Test Suite 'MobileDataUsageViewModelTests' passed at 2019-09-19 18:10:51.166.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.009 (0.010) seconds
+Test Suite 'SPHTests.xctest' passed at 2019-09-19 18:10:51.167.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.009 (0.011) seconds
+Test Suite 'Selected tests' passed at 2019-09-19 18:10:51.167.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.009 (0.012) seconds

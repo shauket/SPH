@@ -1,0 +1,11 @@
+Test Suite 'Selected tests' started at 2019-09-19 18:56:06.387
+Test Suite 'SPHTests.xctest' started at 2019-09-19 18:56:06.397
+Test Suite 'DataExtensionTest' started at 2019-09-19 18:56:06.397
+Test Case '-[SPHTests.DataExtensionTest testReadingDataFromFile]' started.
+Test Case '-[SPHTests.DataExtensionTest testReadingDataFromFile]' passed (0.024 seconds).
+Test Suite 'DataExtensionTest' passed at 2019-09-19 18:56:06.423.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.024 (0.025) seconds
+Test Suite 'SPHTests.xctest' passed at 2019-09-19 18:56:06.423.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.024 (0.026) seconds
+Test Suite 'Selected tests' passed at 2019-09-19 18:56:06.424.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.024 (0.037) seconds

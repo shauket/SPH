@@ -1,0 +1,6 @@
+18:56:06.370 Xcode[39679:4642062] Got authorization request for pid 66710
+
+18:56:06.370 Xcode[39679:4642062] Requesting authorization for pid 66710
+
+18:56:06.372 Xcode[39679:4642068] Got reply to authorization request for pid 66710 (result:error): 1: (null)
+

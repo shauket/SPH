@@ -1,0 +1,6 @@
+18:44:23.709 Xcode[39679:4627925] Got authorization request for pid 66321
+
+18:44:23.709 Xcode[39679:4627925] Requesting authorization for pid 66321
+
+18:44:23.713 Xcode[39679:4627925] Got reply to authorization request for pid 66321 (result:error): 1: (null)
+

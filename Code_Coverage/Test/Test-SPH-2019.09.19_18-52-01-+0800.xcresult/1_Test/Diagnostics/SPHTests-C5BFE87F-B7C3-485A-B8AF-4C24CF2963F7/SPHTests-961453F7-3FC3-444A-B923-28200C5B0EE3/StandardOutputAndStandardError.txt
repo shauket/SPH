@@ -1,0 +1,11 @@
+Test Suite 'Selected tests' started at 2019-09-19 18:52:07.445
+Test Suite 'SPHTests.xctest' started at 2019-09-19 18:52:07.446
+Test Suite 'DataExtensionTest' started at 2019-09-19 18:52:07.446
+Test Case '-[SPHTests.DataExtensionTest testWriteDataInFile]' started.
+Test Case '-[SPHTests.DataExtensionTest testWriteDataInFile]' passed (0.027 seconds).
+Test Suite 'DataExtensionTest' passed at 2019-09-19 18:52:07.474.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.027 (0.028) seconds
+Test Suite 'SPHTests.xctest' passed at 2019-09-19 18:52:07.475.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.027 (0.029) seconds
+Test Suite 'Selected tests' passed at 2019-09-19 18:52:07.475.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.027 (0.030) seconds

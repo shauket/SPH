@@ -1,0 +1,12 @@
+Test Suite 'Selected tests' started at 2019-09-19 18:41:47.116
+Test Suite 'SPHTests.xctest' started at 2019-09-19 18:41:47.117
+Test Suite 'DataExtensionTest' started at 2019-09-19 18:41:47.117
+Test Case '-[SPHTests.DataExtensionTest testFlushFile]' started.
+
+Test Case '-[SPHTests.DataExtensionTest testFlushFile]' passed (0.020 seconds).
+Test Suite 'DataExtensionTest' passed at 2019-09-19 18:41:47.138.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.021) seconds
+Test Suite 'SPHTests.xctest' passed at 2019-09-19 18:41:47.139.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.022) seconds
+Test Suite 'Selected tests' passed at 2019-09-19 18:41:47.139.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.020 (0.023) seconds

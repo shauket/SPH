@@ -1,0 +1,5 @@
+2019-09-19 10:56:02 +0000: Received worker from worker provider: 0x7fbefb4b0fb0 [0: iPhone Xʀ (4104D256-BA5A-467D-843C-A441350CFE34)]
+2019-09-19 10:56:06 +0000: Worker 0x7fbefb4b0fb0 [66710: iPhone Xʀ (4104D256-BA5A-467D-843C-A441350CFE34)] finished bootstrapping
+2019-09-19 10:56:06 +0000: Parallelization disabled; test execution driven by the test process
+2019-09-19 10:56:06 +0000: Worker 0x7fbefb4b0fb0 [66710: iPhone Xʀ (4104D256-BA5A-467D-843C-A441350CFE34)] finished successfully
+2019-09-19 10:56:06 +0000: Finished executing tests (cancelled: No)

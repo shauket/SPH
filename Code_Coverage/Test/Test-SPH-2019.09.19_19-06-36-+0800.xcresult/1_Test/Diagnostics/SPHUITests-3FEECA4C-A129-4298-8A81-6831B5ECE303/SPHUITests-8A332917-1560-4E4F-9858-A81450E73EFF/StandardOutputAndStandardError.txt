@@ -1,0 +1,24 @@
+2019-09-19 19:06:51.481383+0800 SPHUITests-Runner[67092:4652698] Running tests...
+2019-09-19 19:06:52.614954+0800 SPHUITests-Runner[67092:4652698] [AXMediaCommon] Unable to look up screen scale
+2019-09-19 19:06:52.615049+0800 SPHUITests-Runner[67092:4652698] [AXMediaCommon] Unexpected physical screen orientation
+2019-09-19 19:06:52.677063+0800 SPHUITests-Runner[67092:4652698] [AXMediaCommon] Unable to look up screen scale
+2019-09-19 19:06:52.679945+0800 SPHUITests-Runner[67092:4652698] [AXMediaCommon] Unable to look up screen scale
+2019-09-19 19:06:52.680029+0800 SPHUITests-Runner[67092:4652698] [AXMediaCommon] Unexpected physical screen orientation
+Test Suite 'All tests' started at 2019-09-19 19:06:53.928
+Test Suite 'SPHUITests.xctest' started at 2019-09-19 19:06:53.929
+Test Suite 'SPHUITests' started at 2019-09-19 19:06:53.929
+Test Case '-[SPHUITests.SPHUITests testExample]' started.
+    t =     0.00s Start Test at 2019-09-19 19:06:53.930
+    t =     0.17s Set Up
+    t =     0.17s     Open com.appshep.SPH
+    t =     0.20s         Launch com.appshep.SPH
+    t =     2.73s             Wait for accessibility to load
+    t =     3.64s             Wait for com.appshep.SPH to idle
+    t =     5.17s Tear Down
+Test Case '-[SPHUITests.SPHUITests testExample]' passed (5.377 seconds).
+Test Suite 'SPHUITests' passed at 2019-09-19 19:06:59.308.
+	 Executed 1 test, with 0 failures (0 unexpected) in 5.377 (5.379) seconds
+Test Suite 'SPHUITests.xctest' passed at 2019-09-19 19:06:59.308.
+	 Executed 1 test, with 0 failures (0 unexpected) in 5.377 (5.380) seconds
+Test Suite 'All tests' passed at 2019-09-19 19:06:59.309.
+	 Executed 1 test, with 0 failures (0 unexpected) in 5.377 (5.381) seconds

@@ -1,0 +1,11 @@
+Test Suite 'Selected tests' started at 2019-09-19 18:20:31.498
+Test Suite 'SPHTests.xctest' started at 2019-09-19 18:20:31.499
+Test Suite 'MobileDataUsageModelTest' started at 2019-09-19 18:20:31.500
+Test Case '-[SPHTests.MobileDataUsageModelTest testYearSpllitingToComponents]' started.
+Test Case '-[SPHTests.MobileDataUsageModelTest testYearSpllitingToComponents]' passed (0.024 seconds).
+Test Suite 'MobileDataUsageModelTest' passed at 2019-09-19 18:20:31.526.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.024 (0.026) seconds
+Test Suite 'SPHTests.xctest' passed at 2019-09-19 18:20:31.527.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.024 (0.027) seconds
+Test Suite 'Selected tests' passed at 2019-09-19 18:20:31.528.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.024 (0.029) seconds
